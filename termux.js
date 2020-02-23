@@ -7,7 +7,7 @@ const DEFAULT_PORT = 4884;
 
 const wd = require('wd');
 
-var browser = wd.promiseChainRemote({
+var browser = new wd.promiseChainRemote({
     host: 'localhost',
     port: 4884
 });
