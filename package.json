@@ -10,12 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "selenium-webdriver": "^4.0.0-alpha.5",
     "wd": "^1.12.1",
-    "webdriverio": "^5.18.6"
   },
   "devDependencies": {
-    "@wdio/cli": "^5.18.6",
-    "chromedriver": "^80.0.0"
   }
 }
