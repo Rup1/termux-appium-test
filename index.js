@@ -1,16 +1,21 @@
 const wdio = require("webdriverio");
-
+const { startServer } = require('termux-appium');
+const DEFAULT_HOST = "localhost";
+const DEFAULT_PORT = 4884;
 const opts = {
   port: 4884,
   capabilities: {
     platformName: "Android",
     platformVersion: "10.0",
-    deviceName: "Pixel 2",
+    deviceName: "Termux",
     appPackage: "com.instagram.android",
     appActivity: ".activity.MainTabActivity",
     automationName: "UiAutomator2"
   }
 };
+(async function main () {
+  return await startServer(DEFAULT_PORT, DEFAULT_HOST);
+})();
 
 const userSelectors = (userName) => {
   return {
