@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "wd": "^1.12.1"
+    "wd": "^1.12.1",
+    "termux-appium": "https://github.com/Rup1/termux-appium.git"
   },
   "devDependencies": {
   }
