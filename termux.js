@@ -2,8 +2,7 @@ const { startServer } = require('termux-appium');
 const DEFAULT_HOST = "localhost";
 const DEFAULT_PORT = 4884;
 (async function main () {
-  const termuxServer = new startServer(DEFAULT_PORT, DEFAULT_HOST)
-  return await termuxServer;
+  return await startServer(DEFAULT_PORT, DEFAULT_HOST);
 })();
 
 const wd = require('wd');
@@ -28,4 +27,3 @@ const defaultCaps = {
     await browser.quit();
 
 })()
-
