@@ -3,7 +3,7 @@ const DEFAULT_HOST = "localhost";
 const DEFAULT_PORT = 4884;
 (async function main () {
   const termuxServer = new startServer(DEFAULT_PORT, DEFAULT_HOST)
-  return await termuxServer(DEFAULT_PORT, DEFAULT_HOST);
+  return await termuxServer;
 })();
 
 const wd = require('wd');
