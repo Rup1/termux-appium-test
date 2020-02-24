@@ -2,12 +2,13 @@ const { startServer } = require('termux-appium');
 const DEFAULT_HOST = "localhost";
 const DEFAULT_PORT = 4884;
 (async function main () {
-  return await startServer(DEFAULT_PORT, DEFAULT_HOST);
+  const termuxServer = new startServer(DEFAULT_PORT, DEFAULT_HOST)
+  return await termuxServer(DEFAULT_PORT, DEFAULT_HOST);
 })();
 
 const wd = require('wd');
 
-var browser = new wd.promiseChainRemote({
+var browser = wd.promiseChainRemote({
     host: 'localhost',
     port: 4884
 });
@@ -27,3 +28,4 @@ const defaultCaps = {
     await browser.quit();
 
 })()
+
