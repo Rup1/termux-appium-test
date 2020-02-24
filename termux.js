@@ -9,7 +9,7 @@ console.log("anything??");
 
 const wd = require('wd');
 
-var browser = new wd.promiseChainRemote({
+var browser = wd.promiseChainRemote({
     host: 'localhost',
     port: 4884
 });

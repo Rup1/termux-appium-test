@@ -3,7 +3,7 @@
 // Then paste this into a .js file and run with Node 7.6+
 
 const wd = require('wd');
-const driver = wd.promiseChainRemote("http://localhost:4723/wd/hub")
+const driver = wd.promiseChainRemote("http://localhost:4884/wd/hub")
 const caps = {"platformName":"Android","platformVersion":"10.0","deviceName":"Pixel 2","appPackage":"com.instagram.android","appActivity":".activity.MainTabActivity","automationName":"UiAutomator2"};
 
 async function main () {
