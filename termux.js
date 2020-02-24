@@ -2,7 +2,7 @@ const { startServer } = require('termux-appium');
 const DEFAULT_HOST = "localhost";
 const DEFAULT_PORT = 4884;
 (async function main () {
-    console.log('starting server....')
+    console.log('starting server....');
   return await startServer(DEFAULT_PORT, DEFAULT_HOST);
 })();
 

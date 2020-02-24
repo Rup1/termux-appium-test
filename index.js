@@ -14,6 +14,7 @@ const opts = {
   }
 };
 (async function main () {
+  console.log('starting server....');
   return await startServer(DEFAULT_PORT, DEFAULT_HOST);
 })();
 
@@ -85,6 +86,7 @@ const userSelectors = (userName) => {
 };
 
 async function main () {
+  console.log("running runTest...");
   const driver = await wdio.remote(opts);
   const find = (locator, el) => {
     if(locator === "xpath") {
